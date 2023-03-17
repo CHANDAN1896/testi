@@ -937,4 +937,14 @@ li{
 }
 
 /* footer end*/
+#ite1{
+   width: 500px;
+   height: 150px;
+}
 
+@media(max-width:500px){
+   #ite1{
+      width: 300px;
+   }
+   
+   }
