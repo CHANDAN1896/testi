@@ -14,11 +14,19 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>         
    
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 <style>
     
 /* about us css */
-
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
 
 img{
     border-radius: 10px;
@@ -270,18 +278,101 @@ line-height: 1.75;
 
 
 
+/*user review start */
+.testimonial{
+            margin: 0 20px 40px;
+        }
+        .testimonial .testimonial-content{
+            padding: 35px 25px 35px 50px;
+            margin-bottom: 35px;
+            background: #fff;
+            position: relative;
+        }
+        .testimonial .testimonial-content:before{
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            border-top: 15px solid #718076;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        .testimonial .testimonial-content:after{
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            border-top: 15px solid #718076;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        .testimonial-content .testimonial-icon{
+            width: 50px;
+            height: 45px;
+            background: #088178;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            line-height: 42px;
+            position: absolute;
+            top: 37px;
+            left: -19px;
+        }
+        .testimonial-content .testimonial-icon:before{
+            content: "";
+            border-bottom: 16px solid #088178;
+            border-left: 18px solid transparent;
+            position: absolute;
+            top: -16px;
+            left: 1px;
+        }
+        .testimonial .description{
+            font-size: 15px;
+            font-style: italic;
+            color: #8a8a8a;
+            line-height: 23px;
+            margin: 0;
+        }
+        .testimonial .title{
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #525252;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+        }
+        .testimonial .post{
+            display: block;
+            font-size: 14px;
+            color: #088178;
+        }
+        .owl-theme .owl-controls{
+            margin-top: 20px;
+        }
+        .owl-theme .owl-controls .owl-page span{
+            background: #ccc;
+            opacity: 1;
+            transition: all 0.4s ease 0s;
+        }
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span{
+            background: #088178;
+        }
 
 
 
+/*user review end */
 
 
-/* about us en*/
+
+/* about us end*/
 </style>
     </head>
 
     <body>
 
-        <section id="header">
+        <section id="header" >
             <a  class="logo" href="home1.html"> Sports Academy</a>
 
             <div>
@@ -315,7 +406,7 @@ line-height: 1.75;
     <div class="container1">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">About Project</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Sports education will change the mindset of the society.</h3>
         </div>
         <ul class="timeline">
             <li>
@@ -375,23 +466,227 @@ line-height: 1.75;
 </section>
 
 <!-- road map end -->
-        <section>
-            
-            <div id="ph">
-                
-                <img src="trainer/me.jpeg" height="500px">
 
-                <p id="phc">
-                    <h1>MEET CHANDAN</h1>
 
-                    Chandan gupta is from india.
-                </p>
+
+
+
+<h2 id="head1" style="margin-top: 50px; padding-bottom: 30px;">Our clients review<span style="color: #088178; font-size:x-large; ">●</span></h2>
+<div class="container2" style="width: 95%; padding-left: 100px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            It is a good place for sports lover who are looking for some practice and training.
+                            We were here to do nets for Cricket and got 2 of them, which are good enough, the cemented track is well maintained and has a good floodlight support as well.
+                            Plus there is quite a lot of space for other sports like Soccer, Basketball etc. </p>
+                    </div>
+                    <h3 class="title">Prem Nikam</h3>
+                    <span class="post">Basketball player</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            Lots of person come here to have learning of different courses like badminton, cricket, football etc. They have very good coaches here. The fees are also not very expensive.</p>
+                    </div>
+                    <h3 class="title">Soyam Rawani</h3>
+                    <span class="post">Football Athlete</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            Everything is fine except two ,1 Response of the conductor/ communicator is not well mannered.One rest stop for 12 hours journey a bit discomfort.</p>
+                    </div>
+                    <h3 class="title">Rahul Ahuja</h3>
+                    <span class="post">Wrestling Athlete</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            Have joined Sports Academy and now fencing been very happy with the trainers and support.</p>
+                    </div>
+                    <h3 class="title">Aakash mondal</h3>
+                    <span class="post">Fencing Athlete</span>
+                </div>
+
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            "Great coaches and a supportive community - highly recommend!"
+                          </p>
+                    </div>
+                    <h3 class="title">Karan kumar</h3>
+                    <span class="post">Football Athlete</span>
+                </div>
+
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            "I've seen so much improvement in my skills since joining this sports academy - thanks to the amazing training programs and knowledgeable coaches."
+                        </p>
+                    </div>
+                    <h3 class="title">Shubham Gupta </h3>
+                    <span class="post">Cricket Athlete</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            "I love the sense of camaraderie and teamwork at this sports academy - it makes training so much more enjoyable!"
+             </p>
+                    </div>
+                    <h3 class="title">Pintu Singh </h3>
+                    <span class="post">Javelin Athlete</span>
+                </div>
+
+
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            "I'm a beginner and was nervous about joining a sports academy, but this one made me feel welcome and supported from day one."                 </p>
+                    </div>
+                    <h3 class="title">Manish thorat</h3>
+                    <span class="post">Golf Athlete</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            "The coaches here really care about helping you reach your goals - I appreciate their dedication and expertise."
+                        </p>
+                    </div>
+                    <h3 class="title">Pravin aghrari</h3>
+                    <span class="post">Volleyball Athlete</span>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1000,3],
+        itemsDesktopSmall:[980,2],
+        itemsTablet:[768,2],
+        itemsMobile:[650,1],
+        pagination:true,
+        navigation:false,
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});
+</script>
+
+<style>
+    .about{
+        width: 100%;
+        padding: 78px 0px;
+        background-color: whitesmoke;
+    }
+    .about-text{
+        width: 550px;
+    }
+    #main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-text h1{
+        color: #088178;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .about-text h5{
+        color: #088178;
+        font-size: 20px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+    .spa{
+        color: #f9004d;
+
+    }
+    .about-text p{
+        color: #000;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+
+</style>
+
+
+
+<section class="about">
+            
+    <div id="main">
         
+        <img src="trainer/me.jpeg" height="500px">
+        <div class="about-text">
+            <h1>MEET CHANDAN</h1>
+            <h5>Founder <span class="spa">& Developer</span></h5>
+            <p>
+            Chandan gupta is from india. He is a Founder & Developer of Sports Academy. He is a student of BSc IT in N G Acharya and D K Marathe college.  
+            </p>
 
-
-
+            <p>
+             "Success in sports is not just about winning, it's about the journey of self-improvement and the dedication to push beyond your limits". <br> <span>~ chandan gupta</span>
+            </p>
+            <div class="icons">
+                <a id="foota" href="https://www.youtube.com/@acpsachingaming8986"><i class="fa-brands fa-youtube fa-3x"></i></a>
+                 <a id="foota" href="https://www.twitter.com/@SportsA60948427"> <i  class="fa-brands fa-twitter fa-3x"></i></a>
+                 <a id="foota" href="https://www.facebook.com/profile.php?id=100030685280523"> <i  class="fa-brands fa-facebook fa-3x"></i></a>
+                 <a id="foota" href="https://www.instagram.com/i.am_chandangupta/"> <i  class="fa-brands fa-square-instagram fa-3x" ></i></a>
+              </div> 
+        </div>
+    </div>
+</section>
 
 
 
@@ -404,7 +699,7 @@ line-height: 1.75;
 
 
 
-<footer>
+<footer  style="display: flex;">
 
     <div class="foo1">
         <a  class="logo" href="home1.html"> Sports Academy</a>
@@ -424,7 +719,7 @@ line-height: 1.75;
                   <a id="foota" href="https://www.youtube.com/@acpsachingaming8986"><i class="fa-brands fa-youtube fa-2x"></i></a>
                    <a id="foota" href="https://www.twitter.com/@SportsA60948427"> <i class="fa-brands fa-twitter fa-2x"></i></a>
                    <a id="foota" href="https://www.facebook.com/profile.php?id=100030685280523"> <i class="fa-brands fa-facebook fa-2x"></i></a>
-                   <a id="foota" href="https://www.instagram.com/chandangupta9294/"> <i class="fa-brands fa-square-instagram fa-2x" ></i></a>
+                   <a id="foota" href="https://www.instagram.com/i.am_chandangupta/"> <i class="fa-brands fa-square-instagram fa-2x" ></i></a>
                 </div>    
   
     </div>
@@ -451,7 +746,7 @@ line-height: 1.75;
   
   
            <center> <h4> Timing </h4><br></center>
-            <ul>
+     
   
            
                 <li id="tm">Mon :5:30am-8:30pm</li>
@@ -489,12 +784,7 @@ line-height: 1.75;
   
     </div>
   </center>
-  
 
-
-
-  
- 
  <script src="js/script.js"></script>
 </body>
 </html>
